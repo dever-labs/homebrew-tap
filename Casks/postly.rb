@@ -7,7 +7,7 @@ cask "postly" do
   end
 
   on_intel do
-    url "https://github.com/dever-labs/postly/releases/download/v#{version}/Postly-#{version}-x64.dmg"
+    url "https://github.com/dever-labs/postly/releases/download/v#{version}/Postly-#{version}.dmg"
     sha256 :no_check
   end
 
