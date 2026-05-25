@@ -1,14 +1,14 @@
 cask "postly" do
-  version "0.6.3"
+  version "0.6.2"
 
   on_arm do
     url "https://github.com/dever-labs/postly/releases/download/v#{version}/Postly-#{version}-arm64.dmg"
-    sha256 "2dd6f126576e0a7ddffa4c5a3190a031fb287d95334751fd686a30e37eed516c"
+    sha256 "638d0c9a3c950bfb80bcdc57ba0e253f202dab310eca67726acf09ea0417bbf9"
   end
 
   on_intel do
     url "https://github.com/dever-labs/postly/releases/download/v#{version}/Postly-#{version}.dmg"
-    sha256 "eeb48220c319840de1f4daca0e51c1029222ad67fd9a4884076799b3892893b5"
+    sha256 "a9be1367c7ab8787c4b58ac4bf9fc16aa0015d3a819ab65469183d5196c48b88"
   end
 
   name "Postly"
