@@ -1,0 +1,36 @@
+# Describes this repository in devhub (https://hub.dever.dk), dever-labs'
+# developer portal. devhub's GitHub discovery reads this file from the
+# default branch.
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: distribution
+  namespace: devtools
+  title: Distribution
+  description: Package-manager repositories that ship dever-labs apps (Homebrew tap, Scoop bucket).
+  annotations:
+    github.com/project-slug: dever-labs/homebrew-tap
+spec:
+  owner: group:devtools/engineering
+  domain: domain:devtools/devtools
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homebrew-tap
+  namespace: devtools
+  title: Homebrew tap
+  description: >
+    dever-labs/tap — Homebrew casks (Casks/) for devx and Postly, updated by
+    each app's release workflow.
+  annotations:
+    github.com/project-slug: dever-labs/homebrew-tap
+  tags: [homebrew, macos]
+  links:
+    - url: https://brew.sh
+      title: Homebrew
+spec:
+  type: distribution
+  lifecycle: production
+  owner: group:devtools/engineering
+  system: system:devtools/distribution
