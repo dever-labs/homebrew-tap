@@ -10,6 +10,8 @@ metadata:
   description: Package-manager repositories that ship dever-labs apps (Homebrew tap, Scoop bucket).
   annotations:
     github.com/project-slug: dever-labs/homebrew-tap
+    # No docs site on purpose: the README is all there is (devhub "Has docs").
+    devhub/docs: none
 spec:
   owner: group:devtools/engineering
   domain: domain:devtools/devtools
@@ -25,6 +27,8 @@ metadata:
     each app's release workflow.
   annotations:
     github.com/project-slug: dever-labs/homebrew-tap
+    # No docs site on purpose: the README is all there is (devhub "Has docs").
+    devhub/docs: none
   tags: [homebrew, macos]
   links:
     - url: https://brew.sh
